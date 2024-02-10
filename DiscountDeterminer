@@ -1,0 +1,22 @@
+package Unit3;
+import java.util.Scanner;
+/**
+ * Write a description of class DiscountDeterminer here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class DiscountDeterminer
+{
+    public static void main(String []args){
+        Scanner fromKey = new Scanner (System.in);
+        System.out.println("Enter the original bill amount: ");
+        int bill = fromKey.nextInt();
+    
+        if(bill >= 2000){
+            double bill2 = (double) bill * 0.15;
+            double bill3 = (double) bill - bill2;
+            System.out.println("Bill after discount:" + bill3);
+        }
+    }
+}
